@@ -4,54 +4,55 @@ build/c/scimark2
 ** for details. (Results can be submitted to pozo@nist.gov)     **
 **                                                              **
 Using       2.00 seconds min time per kenel.
-Composite Score:         1511.02
-FFT             Mflops:  1355.28    (N=1024)
-SOR             Mflops:  1497.25    (100 x 100)
-MonteCarlo:     Mflops:   334.08
-Sparse matmult  Mflops:  1954.11    (N=1000, nz=5000)
-LU              Mflops:  2414.38    (M=100, N=100)
+Composite Score:         1305.58
+FFT             Mflops:  1108.50    (N=1024)
+SOR             Mflops:  1136.37    (100 x 100)
+MonteCarlo:     Mflops:   360.80
+Sparse matmult  Mflops:  1367.90    (N=1000, nz=5000)
+LU              Mflops:  2554.31    (M=100, N=100)
 build/c/scimark2 -large
 **                                                              **
 ** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **
 ** for details. (Results can be submitted to pozo@nist.gov)     **
 **                                                              **
 Using       2.00 seconds min time per kenel.
-Composite Score:         1115.57
-FFT             Mflops:   185.28    (N=1048576)
-SOR             Mflops:  1328.36    (1000 x 1000)
-MonteCarlo:     Mflops:   334.08
-Sparse matmult  Mflops:  1450.94    (N=100000, nz=1000000)
-LU              Mflops:  2279.20    (M=1000, N=1000)
+Composite Score:          966.52
+FFT             Mflops:   150.35    (N=1048576)
+SOR             Mflops:  1038.17    (1000 x 1000)
+MonteCarlo:     Mflops:   383.20
+Sparse matmult  Mflops:   844.46    (N=100000, nz=1000000)
+LU              Mflops:  2416.42    (M=1000, N=1000)
+mkdir -p build/java
 javac -sourcepath src/java -d build/java src/java/jnt/scimark2/commandline.java
 java -classpath build/java jnt.scimark2.commandline
 
 SciMark 2.0a
 
-Composite Score: 1828.147392244037
-FFT (1024): 1049.1672872095655
-SOR (100x100):   1239.9968667860549
-Monte Carlo : 725.5012230825422
-Sparse matmult (N=1000, nz=5000): 1742.9787830855328
-LU (100x100): 4383.09280105649
+Composite Score: 1167.485532434665
+FFT (1024): 859.6552993039752
+SOR (100x100):   863.71808791014
+Monte Carlo : 483.449727694041
+Sparse matmult (N=1000, nz=5000): 1090.4493394951912
+LU (100x100): 2540.1552077699766
 
 java.vendor: Oracle Corporation
 java.version: 1.8.0_131
 os.arch: amd64
-os.name: Windows 7
-os.version: 6.1
+os.name: Linux
+os.version: 4.9.36-x86_64-linode85
 java -classpath build/java jnt.scimark2.commandline -large
 
 SciMark 2.0a
 
-Composite Score: 1171.893612057482
-FFT (1048576): 201.61114996699823
-SOR (1000x1000):   1110.4161167432255
-Monte Carlo : 729.4441724952741
-Sparse matmult (N=100000, nz=1000000): 1314.0841122732031
-LU (1000x1000): 2503.9125088087085
+Composite Score: 984.1050448836326
+FFT (1048576): 136.3783478067598
+SOR (1000x1000):   806.1685757367928
+Monte Carlo : 515.4785657766312
+Sparse matmult (N=100000, nz=1000000): 906.9972883847818
+LU (1000x1000): 2555.502446713197
 
 java.vendor: Oracle Corporation
 java.version: 1.8.0_131
 os.arch: amd64
-os.name: Windows 7
-os.version: 6.1
+os.name: Linux
+os.version: 4.9.36-x86_64-linode85
